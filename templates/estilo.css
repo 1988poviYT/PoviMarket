@@ -1,0 +1,522 @@
+/* ==========================================================================
+   ESTILOS GENERALES POVIMARKET - FIGMA
+   ========================================================================== */
+
+/* Color RGB principal */
+body {
+  background-color: rgb(15, 8, 28);
+  color: rgb(240, 240, 245);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header & Buscador */
+.nav-header {
+  background-color: #0b0317; /* HEX */
+  border-bottom: 2px solid #a855f7;
+  padding: 0.6rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-img {
+  width: 42px !important;
+  height: 42px !important;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.brand-title {
+  color: #c084fc;
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #e9d5ff;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  width: 250px;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  color: #1e0b36;
+  font-weight: bold;
+}
+
+/* Navegación */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0.6rem 0;
+  margin: 0;
+  background-color: #130728;
+  border-bottom: 1px solid #3b1566;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #ffffff;
+  background-color: #2e1052;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  background-color: #9333ea;
+}
+
+.main-wrapper {
+  max-width: 1050px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.section-title {
+  color: #e9d5ff;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #a855f7;
+  padding-left: 0.5rem;
+}
+
+/* Banner Slider Principal */
+.hero-slider {
+  width: 100%;
+  height: 220px;
+  border: 2px solid #a855f7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Grillas y Tarjetas de Juegos / Ofertas */
+.cards-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.offer-card {
+  background-color: #1e0b36;
+  border: 2px solid #c084fc;
+  border-radius: 10px;
+  padding: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.offer-card img {
+  width: 110px !important;
+  height: 110px !important;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.offer-info h3 {
+  color: #e9d5ff;
+  margin: 0 0 0.3rem 0;
+  font-size: 1rem;
+}
+
+.offer-info p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #d8b4fe;
+}
+
+.badge-discount {
+  background-color: darkviolet; /* Keyword */
+  color: yellow; /* Keyword */
+  font-weight: 900;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 0.4rem;
+}
+
+/* Categorías Grid */
+.grid-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.cat-card {
+  background-color: #1a0830;
+  border: 2px solid #7c3aed;
+  border-radius: 10px;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.cat-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cat-card h3 {
+  color: white;
+  margin: 0.6rem 0 0 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* Virales Layout */
+.viral-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.viral-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.viral-item {
+  background-color: #e9d5ff;
+  color: #1e0b36;
+  border-radius: 10px;
+  padding: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.viral-item img {
+  width: 130px !important;
+  height: 85px !important;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.viral-item p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.mascot-sidebar {
+  text-align: center;
+}
+
+.mascot-bubble {
+  background-color: #9333ea;
+  color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mascot-img {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #a855f7;
+}
+
+/* Game Pass */
+.gamepass-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.5rem;
+}
+
+.filter-sidebar {
+  background-color: #1a0830;
+  border: 2px solid #a855f7;
+  border-radius: 10px;
+  padding: 1rem;
+  height: fit-content;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.cards-grid-gp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gp-card {
+  background-color: #10b981;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gp-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.gp-card.ultimate {
+  background-color: #059669;
+}
+
+.gp-price {
+  background-color: #1e0b36;
+  color: #facc15;
+  padding: 0.3rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* Ficha de Juego y Reseñas */
+.game-detail-card {
+  background-color: #150728;
+  border: 2px solid #a855f7;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-main-info {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.game-main-info img {
+  width: 220px !important;
+  height: 130px !important;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rating-star {
+  color: #facc15;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.review-box {
+  background-color: #e9d5ff;
+  color: #1e0b36;
+  border-radius: 8px;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.review-avatar {
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Soporte TEC */
+.support-container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: #1a0830;
+  border: 2px solid #a855f7;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.support-form {
+  flex: 1;
+}
+
+.support-form textarea {
+  width: 100%;
+  height: 110px;
+  border-radius: 12px;
+  padding: 0.8rem;
+  border: none;
+  background-color: #e9d5ff;
+  font-family: inherit;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* Perfil */
+.profile-card {
+  background-color: #1a0830;
+  border: 2px solid #a855f7;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 2px solid #3b1566;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar {
+  width: 65px !important;
+  height: 65px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #a855f7;
+}
+
+.profile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-menu li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #2e1052;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Footer HSL */
+.site-footer {
+  background-color: hsl(265, 55%, 5%);
+  color: hsl(270, 40%, 80%);
+  border-top: 2px solid hsl(270, 60%, 25%);
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .viral-layout, .gamepass-container, .support-container { grid-template-columns: 1fr; flex-direction: column; }
+  .game-main-info { flex-direction: column; }
+}
+/* Modo Claro Alternativo */
+body.light-mode {
+  background-color: #f3e8ff !important;
+  color: #1e0b36 !important;
+}
+
+body.light-mode .main-wrapper,
+body.light-mode .login-container,
+body.light-mode .support-container {
+  background-color: #ffffff !important;
+  color: #1e0b36 !important;
+}
+
+body.light-mode .seo-article h3,
+body.light-mode .seo-article h4 {
+  color: #7c3aed !important;
+}
+/* Correcciones para el Modo Claro (Light Mode) */
+body.light-mode {
+  background-color: #f3e8ff !important;
+  color: #1e0b36 !important;
+}
+
+body.light-mode .main-wrapper,
+body.light-mode .login-container,
+body.light-mode .support-container,
+body.light-mode .viral-item,
+body.light-mode .seo-article {
+  background-color: #ffffff !important;
+  color: #1e0b36 !important;
+}
+
+/* Forzar contraste alto en párrafos y encabezados */
+body.light-mode p,
+body.light-mode span,
+body.light-mode li,
+body.light-mode .seo-article p,
+body.light-mode .seo-article li {
+  color: #1e0b36 !important;
+}
+
+body.light-mode .seo-article h3,
+body.light-mode .seo-article h4,
+body.light-mode h2,
+body.light-mode h3 {
+  color: #6b21a8 !important;
+}
+
+body.light-mode #live-clock {
+  color: #581c87 !important;
+}
+body.light-mode #live-clock-header {
+  background-color: #ffffff !important;
+  color: #1e0b36 !important;
+  border-color: #7c3aed !important;
+}
+
+body.light-mode #live-clock-footer {
+  color: #581c87 !important;
+}

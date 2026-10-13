@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cuenta | POVIMARKET</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    /* Estilo para ocultar elementos de soporte a lectores de pantalla */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav-header">
+    <div class="header-container">
+      <div class="logo-box">
+        <img src="../img/Logo_povi.png" alt="Logotipo oficial de POVIMARKET" class="logo-img">
+        <h1 class="brand-title">POVIMARKET</h1>
+      </div>
+
+      <!-- Contenedor div con formulario y label de búsqueda -->
+      <div class="search-box-container">
+        <form role="search" class="search-box" action="#" method="get">
+          <label for="buscar-cuenta" class="sr-only">Buscar dentro de la plataforma</label>
+          <span aria-hidden="true">🔍</span>
+          <input type="text" id="buscar-cuenta" name="q" placeholder="Buscar..." class="search-input" aria-label="Buscar productos o servicios">
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="categorias.html">Categorías</a></li>
+      <li><a href="call-of-duty.html">Reseñas</a></li>
+      <li><a href="gamepass.html">Game Pass</a></li>
+      <li><a href="carrito.html">Carrito</a></li>
+      <li><a href="elden-ring.html">Elden Ring</a></li>
+      <li><a href="gta6.html">Reseñas GTA VI</a></li>
+      <li><a href="probar.html">Probar Demos</a></li>
+      <li><a href="soporte.html">Soporte TEC.</a></li>
+      <li><a href="cuenta.html" class="active" aria-current="page">Mi Cuenta</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-wrapper">
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="../img/Logo_povi.png" alt="Foto de perfil del usuario Usuario_Povi" class="profile-avatar">
+        <div>
+          <h2 style="margin: 0; color: white; font-size: 1.17em;">Usuario_Povi</h2>
+          <p style="margin: 0; color: #a855f7; font-weight: bold;">Cartera: $12,16 USD</p>
+        </div>
+      </div>
+
+      <!-- Menú de la cuenta interactivo para navegación con teclado -->
+      <nav aria-label="Opciones de la cuenta">
+        <ul class="profile-menu">
+          <li><a href="#" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; width: 100%;"><span>Detalles de la cuenta.</span> <span aria-hidden="true">&gt;</span></a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; width: 100%;"><span>Historial de la tienda y de compras.</span> <span aria-hidden="true">&gt;</span></a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; width: 100%;"><span>Añadir métodos de pago.</span> <span aria-hidden="true">&gt;</span></a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; width: 100%;"><span>Actualizar preferencia de tienda.</span> <span aria-hidden="true">&gt;</span></a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; width: 100%;"><span>Gestión de la cuenta.</span> <span aria-hidden="true">&gt;</span></a></li>
+          <li><a href="#" style="text-decoration: none; color: inherit; display: flex; justify-content: space-between; width: 100%;"><span>Gestión del número de teléfono.</span> <span aria-hidden="true">&gt;</span></a></li>
+          <li><a href="#" style="text-decoration: none; color: #ef4444; display: flex; justify-content: space-between; width: 100%;"><span>Eliminar cuenta.</span> <span aria-hidden="true">&gt;</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 POVIMARKET. Todos los derechos reservados.</p>
+  </footer>
+<script src="main.js"></script>
+
+</body>
+</html>
